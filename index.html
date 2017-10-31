@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+  <script type="text/javascript" src="app.js"></script>
+
+</head>
+
+<body>
+  <script>
+  var app = angular.module("myShoppingList", []);
+  app.controller("myCtrl", function($scope) {
+      $scope.products = ["Milk", "Bread", "Cheese"];
+      $scope.addItem = function () {
+          $scope.products.push($scope.addMe);
+      }
+      $scope.removeItem = function (x) {
+        $scope.products.splice(x,1);
+      }
+  });
+
+  </script>
+
+  <main class="container-fluid">
+<div class="row">
+    <div class="col-md-12" ng-app="myShoppingList" ng-controller="myCtrl">
+      <ul>
+        <li ng-repeat="food in products">{{food}}<span ng-click="removeItem($index)"> &nbsp;x</span></li>
+      </ul>
+      <input ng-model="addMe">
+      <button ng-click="addItem()">add</button>
+    </div>
+  </div>
+  </main>
+</body>
+
+</html>
