@@ -9,21 +9,21 @@
 
 </head>
 
-<body>
-  <main class="container-fluid" ng-controller="myCtrl">
+<body ng-controller="myCtrl">
+  <main class="container-fluid" >
 <div class="row">
     <div class="col-md-4 mx-auto div1">
       <ul>
         <li ng-repeat="food in products">{{food}}<span ng-click="removeItem($index)"> &nbsp;x</span></li>
       </ul>
-      <input ng-model="addMe">
+      <input ng-model="addMe" class="text-center">
       <button ng-click="addItem()">add</button>
     </div>
 
-  <p ng-click="addRecipe()">add Bolognese <script>console.log($scope.products)</script></p>
+
   </div>
 
-
+    <button class="text-center" ng-click="addRecipe()"><span class="button-margin">add bolognese </span></button>
 
 
   </main>

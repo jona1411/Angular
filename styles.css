@@ -6,3 +6,14 @@
 li {
   color: white;
 }
+
+button {
+    background-color: #aae;
+    border-style: groove;
+    border-color: #aad;
+    margin: 5px;
+}
+
+.button-margin{
+    margin: 5px;
+}
