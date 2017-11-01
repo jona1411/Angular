@@ -12,7 +12,9 @@
 <body ng-controller="myCtrl">
   <main class="container-fluid" >
 <div class="row">
+
     <div class="col-md-4 mx-auto div1">
+
       <ul>
         <li ng-repeat="food in products">{{food}}<span ng-click="removeItem($index)"> &nbsp;x</span></li>
       </ul>
@@ -23,8 +25,8 @@
 
   </div>
 
-    <button class="text-center" ng-click="addRecipe()"><span class="button-margin">add bolognese </span></button>
 
+    <button class="text-center" ng-click="addRecipe()"><span class="button-margin">add bolognese </span></button>
 
   </main>
 </body>
