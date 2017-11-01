@@ -1,0 +1,31 @@
+[
+  {
+    "name": "spaghetti med kødsovs",
+    "ingredienser": [
+      "Hakket oksekød",
+      "pasta",
+      "løg",
+      "tomat pure"
+    ]
+  },
+  {
+    "name": "risengrød",
+    "ingredienser": [
+      "grødris",
+      "sødmælk",
+      "løg",
+      "groft salt",
+      "vand"
+    ]
+  },
+  {
+    "name": "kylingesalat med bacon",
+    "ingredienser": [
+      "kylling",
+      "Blegselleri",
+      "Mayonnaise",
+      "creme fraiche",
+      "bacon"
+    ]
+  }
+]
