@@ -9,28 +9,25 @@
 
 </head>
 
-<body>
-  <main class="container-fluid">
+<body ng-controller="myCtrl">
+  <main class="container-fluid" >
 <div class="row">
-    <div class="col-md-12" ng-app="myShoppingList" ng-controller="myCtrl">
-      <h3>Lav din egen opskrift</h3>
+
+    <div class="col-md-4 mx-auto div1">
+
       <ul>
         <li ng-repeat="food in products">{{food}}<span ng-click="removeItem($index)"> &nbsp;x</span></li>
       </ul>
-      <input ng-model="addMe">
+      <input ng-model="addMe" class="text-center">
       <button ng-click="addItem()">add</button>
     </div>
+
+
   </div>
-<!---shopping list--->
 
 
-<div class="row">
-  <div class="col-md-4">
-    <h3></h3>
-  <div>
+    <button class="text-center" ng-click="addRecipe()"><span class="button-margin">add bolognese </span></button>
 
-
-</div>
   </main>
 </body>
 
