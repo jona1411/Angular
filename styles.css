@@ -1,5 +1,6 @@
+
 .div1 {
-  background-color: grey;
+  background-color: #eee;
   padding: 20px;
 }
 
@@ -7,13 +8,80 @@ li {
   color: white;
 }
 
+.headline{
+    margin: 20px 30px 30px 30px;
+}
+
 button {
     background-color: #aae;
     border-style: groove;
     border-color: #aad;
-    margin: 100px;
+    margin: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
 }
 
 .button-margin{
     margin: 5px;
+}
+
+.add{
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+}
+
+input {
+    margin: 20px 0 20px 0;
+    padding-top: 10px;
+    width: 100%;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 34px;
+}
+
+span {
+    float: right;
+
+}
+
+.listItem{
+    height:50px;
+    width: 80%;
+}
+.item:nth-child(2n+0){
+ background-color:beige;
+}
+
+.item:nth-child(2n+1){
+    background-color:aquamarine;
+}
+
+p{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 34px;
+
+}
+
+.listItemText{
+    margin-left: 20px;
+}
+.item{
+    width:100%;
+    margin:0;
+}
+
+.removeItem{
+    background-color: #ccc;
+    height:50px;
+    width: 20%;
+    text-align: center;
+}
+
+.side{
+    background-color: #ddd;
+}
+
+body{
+    background-color: #eee;
 }
