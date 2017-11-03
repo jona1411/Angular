@@ -21,7 +21,7 @@
      </div>
     <div class="col-md-4 div1">
 
-      <div class="row item" ng-repeat="food in products">
+      <div class="row item" ng-repeat="food in products track by $index">
         <div class="listItem"><p class="listItemText">-{{food}}</p> </div>
         <div class="removeItem text-center" ng-click="removeItem($index)"><p>x</p></div>
     </div>
